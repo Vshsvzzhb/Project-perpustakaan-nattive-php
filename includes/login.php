@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 
-$error = '';  // Inisialisasi variabel error supaya tidak undefined
+$error = '';  
 
 if (isset($_SESSION['user'])) {
     header("Location: index.php");
@@ -131,5 +131,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <p style="margin-top: 15px;">Belum punya akun? <a href="register.php">Daftar di sini</a></p>
     </div>
 </body>
+
 
 </html>
